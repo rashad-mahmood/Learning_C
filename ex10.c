@@ -7,6 +7,10 @@ int main(int argc, char *argv[])
     // skip first argument since it is command to execute './ex10'
     for(i = 1; i < argc; i++)
     {
+        char *test = "end";
+        if (argv[i] == test){
+            break;
+        }
         printf("Argument number %d: %s \n", i, argv[i]);
     }
 
